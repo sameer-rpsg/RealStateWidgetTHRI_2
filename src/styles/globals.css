@@ -8148,6 +8148,9 @@ a {
 .mb-0 {
     margin-bottom: 0 !important;
 }
+.Stories_storiesHeroBanner__wvXJR .Stories_heroSection__FbBlB img {
+    object-fit: cover;
+}
 @media screen and (max-width: 900px) {
     #storiesherosec .col-md-4 {
         justify-content: flex-start !important;
