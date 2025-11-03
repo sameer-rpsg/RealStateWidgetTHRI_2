@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import styles from "@/components/Project.module.css";
 
 const images = [
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbb00d520fba734812f_slider_01.jpg",
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbbf37240c48c853729_slider_02.jpg",
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbb8c69b773d05c28fa_slider_03-p-1600.jpeg",
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbcd640fb87be01a8e7_slider_04-p-1600.jpeg",
+  "https://www.studioakto.com/video/vid1.mp4",
+  "https://www.studioakto.com/video/last_vid.mp4",
+  "https://www.studioakto.com/video/vid2.mp4",
+  "https://www.pexels.com/download/video/7578547/",
 ];
 
 const miniImages = [
-  "https://assets.website-files.com/61b711f830d358f225addd55/61b72a66c08f141b4270a9dc_advant_01-mini.jpg",
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbb22703a5137412068_advant_02-mini.jpg",
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbbf135aa24f4d05199_advant_03-mini.jpg",
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbbf3724083aa853727_advant_04-mini.jpg",
+  "https://www.studioakto.com/video/vid1.mp4",
+  "https://www.studioakto.com/video/last_vid.mp4",
+  "https://www.studioakto.com/video/vid2.mp4",
+  "https://www.pexels.com/download/video/7578547/",
 ];
 
 const texts = [
@@ -62,7 +62,11 @@ const Project = () => {
               const isPrev = index === prevIndex;
 
               return (
-                <img
+                <video
+                  loop
+                  muted
+                  playsInline
+                  autoPlay
                   key={index}
                   loading="lazy"
                   src={img}
@@ -77,6 +81,21 @@ const Project = () => {
                     transition: "height 0.4s ease",
                   }}
                 />
+                // <img
+                //   key={index}
+                //   loading="lazy"
+                //   src={img}
+                //   data-anim="img"
+                //   alt=""
+                //   className={`${styles.advant__img} ${
+                //     styles[`mod__${index + 1}`]
+                //   }`}
+                //   style={{
+                //     height: isActive || isPrev ? "100%" : "0",
+                //     overflow: "hidden",
+                //     transition: "height 0.4s ease",
+                //   }}
+                // />
               );
             })}
           </div>
@@ -101,7 +120,11 @@ const Project = () => {
                     const isPrev = index === prevIndex;
 
                     return (
-                      <img
+                      <video
+                        loop
+                        muted
+                        playsInline
+                        autoPlay
                         key={index}
                         loading="lazy"
                         src={img}
@@ -116,6 +139,21 @@ const Project = () => {
                           transition: "height 0.4s ease",
                         }}
                       />
+                      // <img
+                      //   key={index}
+                      //   loading="lazy"
+                      //   src={img}
+                      //   data-anim="img"
+                      //   alt=""
+                      //   className={`${styles.advant__card_img} ${
+                      //     styles[`mod__${index + 1}`]
+                      //   }`}
+                      //   style={{
+                      //     height: isActive || isPrev ? "100%" : "0",
+                      //     overflow: "hidden",
+                      //     transition: "height 0.4s ease",
+                      //   }}
+                      // />
                     );
                   })}
                 </div>

@@ -239,7 +239,7 @@ const Article = () => {
                     }}
                     sizes="100vw"
                     
-                    src="https://www.hollywoodreporterindia.com/_next/image?url=https%3A%2F%2Fcdn.hollywoodreporterindia.com%2Fbms-new%2Farticle%2F-2024-09-21T10%253A26%253A43.333Z-LEAD_Ashiesh-Shah_Kashyap-Vyas.JPG&w=3840&q=75"
+                    src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg"
                   />
                 </div>
               </div>
